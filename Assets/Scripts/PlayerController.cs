@@ -13,7 +13,7 @@ public sealed class PlayerController : MonoBehaviour {
 
     private bool IsGrounded {
         get {
-            return Physics.Raycast(transform.position, Vector3.down, 0.5f);
+            return Physics.Raycast(transform.position, Vector3.down, 1.0f);
         }
     }
 
@@ -28,6 +28,12 @@ public sealed class PlayerController : MonoBehaviour {
             return;
         }
 
+        if (CameraFollow.EnabledCursor) {
+            moveDir = Vector3.zero;
+            animator.SetFloat("moveAmount", 0f);
+            return;
+        }
+
         move();
         lookRotation();
     }
@@ -37,10 +43,14 @@ public sealed class PlayerController : MonoBehaviour {
     }
 
     private void move() {
-        float h = Input.GetAxis("Horizontal");
-        float v = Input.GetAxis("Vertical");
-        moveDir = new Vector3(h, 0, v).normalized;
-        float moveAmount = Mathf.Clamp01(new Vector2(h, v).sqrMagnitude);
+        float inputX = Input.GetAxis("Horizontal");
+        float inputY = Input.GetAxis("Vertical");
+        Vector3 h = inputX * Camera.main.transform.right;
+        Vector3 v = inputY * Camera.main.transform.forward;
+        moveDir = (h + v).normalized;
+        moveDir.y = 0f;
+
+        float moveAmount = Mathf.Clamp01(new Vector2(inputX, inputY).sqrMagnitude);
         animator.SetFloat("moveAmount", moveAmount);
 
         if (moveAmount < threshold) return;
