@@ -1,0 +1,99 @@
+﻿{
+  "0": {
+    "type": 0,
+    "grade": 0,
+    "name": "나뭇가지",
+    "description": "숲에서 얻은 평범한 나뭇가지. 무기를 제작할 때 필요할 것 같다."
+  },
+  "1": {
+    "type": 0,
+    "grade": 1,
+    "name": "철 광석",
+    "description": "흔하게 볼 수 있는 철 광석. 무기의 재료로 사용할 수 있을 것 같다."
+  },
+  "2": {
+    "type": 0,
+    "grade": 2,
+    "name": "금 광석",
+    "description": "평소라면 비싼 값에 거래되지만, 마물이 나타나 무기의 재료로 사용되고 있다."
+  },
+  "3": {
+    "type": 0,
+    "grade": 3,
+    "name": "순수한 크리스탈",
+    "description": "순도높은 크리스탈로 희귀하여 무기 재료로 비싼 값에 거래된다."
+  },
+  "4": {
+    "type": 0,
+    "grade": 4,
+    "name": "붉은빛이 감도는 크리스탈",
+    "description": "과거 마왕을 물리친 용사가 사용했던 무기의 재료로 사용됐다."
+  },
+  "5": {
+    "type": 0,
+    "grade": 0,
+    "name": "강화석",
+    "description": "무기를 강화하기위해 필요한 재료."
+  },
+  "6": {
+    "type": 0,
+    "grade": 0,
+    "name": "무기 손잡이",
+    "description": "무기의 손잡이가 되는 부분이다. 나뭇가지로 만들 수 있다."
+  },
+  "100": {
+    "type": 1,
+    "grade": 0,
+    "name": "평범한 철 검",
+    "description": "철을 녹여 만든 평범한 철 검.",
+    "maxEnhancingLevel": 7,
+    "maxDurability": 100,
+    "winChance": 7.0,
+    "repairItemId": 1,
+    "enchantItemId": 5
+  },
+  "101": {
+    "type": 1,
+    "grade": 1,
+    "name": "단단한 철 검",
+    "description": "여러번 두드려 만든 단단한 철 검.",
+    "maxEnhancingLevel": 7,
+    "maxDurability": 100,
+    "winChance": 10.0,
+    "repairItemId": 1,
+    "enchantItemId": 5
+  },
+  "102": {
+    "type": 1,
+    "grade": 2,
+    "name": "황금 검",
+    "description": "값 비싼 황금으로 만들어진 검.",
+    "maxEnhancingLevel": 7,
+    "maxDurability": 100,
+    "winChance": 13.0,
+    "repairItemId": 2,
+    "enchantItemId": 5
+  },
+  "103": {
+    "type": 1,
+    "grade": 3,
+    "name": "크리스탈 검",
+    "description": "순수한 크리스탈 결정으로 만든 검으로 강한 내구도와 날카로움을 자랑한다.",
+    "maxEnhancingLevel": 7,
+    "maxDurability": 100,
+    "winChance": 16.0,
+    "repairItemId": 3,
+    "enchantItemId": 5
+  },
+  "104": {
+    "type": 1,
+    "grade": 4,
+    "name": "전설의 검",
+    "description": "과거 마왕을 물리치기위해 사용됐던 검.",
+    "maxEnhancingLevel": 7,
+    "maxDurability": 100,
+    "winChance": 25.0,
+    "repairItemId": 4,
+    "enchantItemId": 5
+  }
+}

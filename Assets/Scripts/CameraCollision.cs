@@ -13,7 +13,9 @@ public class CameraCollision : MonoBehaviour {
 	}
 
 	private void LateUpdate() {
-		processInput();
+		if (CameraFollow.EnabledInput) {
+			processInput();
+		}
 
 		Vector3 dir = transform.localPosition.normalized;
 		Vector3 movePos = calculateMoveTo(dir);

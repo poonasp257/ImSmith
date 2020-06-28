@@ -36,6 +36,15 @@ public class CameraFollow : MonoBehaviour {
 			processInput();
 		}
 
+		if (Input.GetButtonDown("Cursor")) {
+			if (EnabledCursor) {
+				HideCursor();
+				return;
+			}
+
+			ShowCursor();
+		}
+
 		if (!EnabledInput) return;
 
 		if (Input.GetMouseButtonDown(1) && EnabledCursor) {
@@ -45,16 +54,7 @@ public class CameraFollow : MonoBehaviour {
 		else if (Input.GetMouseButtonUp(1) && enabledRotating) {
 			ShowCursor();
 			enabledRotating = false;
-		}
-
-		if (Input.GetButtonDown("Cursor")) {
-			if (EnabledCursor) {
-				HideCursor();
-				return;
-			}
-
-			ShowCursor();
-		}
+		}		
 	}
 
     private void LateUpdate() {

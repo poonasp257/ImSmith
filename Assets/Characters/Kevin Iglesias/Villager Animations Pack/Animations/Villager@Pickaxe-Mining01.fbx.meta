@@ -147,21 +147,12 @@ ModelImporter:
     rigImportErrors: 
     rigImportWarnings: 
     animationImportErrors: 
-    animationImportWarnings: "\nClip 'Default Take' has import animation warnings
-      that might lower retargeting quality:\nNote: Activate translation DOF on avatar
-      to improve retargeting quality.\n\t'B-palm_04_L' is inbetween humanoid transforms
-      and has rotation animation that will be discarded.\n\t'B-upper_arm_R' has scale
-      animation that will be discarded.\n\t'B-forearm_R' has scale animation that
-      will be discarded.\n\t'B-hand_R' has scale animation that will be discarded.\n\t'B-thigh_L'
-      has scale animation that will be discarded.\n\t'B-shin_L' has scale animation
-      that will be discarded.\n\t'B-foot_L' has scale animation that will be discarded.\n\t'B-thigh_R'
-      has scale animation that will be discarded.\n\t'B-shin_R' has scale animation
-      that will be discarded.\n\t'B-foot_R' has scale animation that will be discarded.\n"
+    animationImportWarnings: 
     animationRetargetingWarnings: 
     animationDoRetargetingWarnings: 0
     importAnimatedCustomProperties: 0
     importConstraints: 0
-    animationCompression: 0
+    animationCompression: 3
     animationRotationError: 0
     animationPositionError: 0
     animationScaleError: 0
