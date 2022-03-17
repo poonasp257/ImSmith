@@ -3,7 +3,7 @@ using UnityEngine.UI;
 
 public class GameRoot : MonoBehaviour {
     private float remainTime;
-    [SerializeField] private float initRemainTime = 10.0f;
+    [SerializeField] private float initRemainTime = 3.0f;
     [SerializeField] private Text remainTimeText;
     [SerializeField] private Text daysText;
 
@@ -43,10 +43,10 @@ public class GameRoot : MonoBehaviour {
         if (GameData.Instance.Stage >= 2) {
             stages[0]?.SetActive(true);
         }
-        else if (GameData.Instance.Stage >= 4) {
+        if (GameData.Instance.Stage >= 4) {
             stages[1]?.SetActive(true);
         }
-        else if (GameData.Instance.Stage >= 6) {
+        if (GameData.Instance.Stage >= 6) {
             stages[2]?.SetActive(true);
         }
 

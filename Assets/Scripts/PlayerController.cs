@@ -18,8 +18,8 @@ public sealed class PlayerController : MonoBehaviour {
 
     [Header("Status Settings")]
     [SerializeField] private float gravity = 10.0f;
-    [SerializeField] private float normalMoveSpeed = 12.0f;
-    [SerializeField] private float sprintMoveSpeed = 18.0f;
+    [SerializeField] private float normalMoveSpeed = 24.0f;
+    [SerializeField] private float sprintMoveSpeed = 36.0f;
     [SerializeField] private float rotationSpeed = 120.0f;
     [SerializeField] private float threshold = 0.5f;
 
